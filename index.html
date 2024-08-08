@@ -10,22 +10,30 @@
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-<a href="#" onclick="openToddleApp()">Abrir Toddle App</a>
-
 <script>
-function openToddleApp() {
-    var appUrl = "intent://#Intent;package=com.toddle.family;scheme=toddle;end";
-    var fallbackUrl = "https://play.google.com/store/apps/details?id=com.toddle.family&hl=en";
+            function openOrFocusTab() {
 
-    // Tenta abrir o aplicativo
-    window.location.href = appUrl;
+                var isIphone = /iPhone|iPad/i.test(navigator.userAgent);
+                var isAndroid = /Android/i.test(navigator.userAgent);
 
-    // Caso o app não esteja instalado, redireciona para a Play Store
-    // setTimeout(function() {
-    //     window.location.href = fallbackUrl;
-    // }, 2000); // Espera 2 segundos antes de redirecionar para a loja
-}
-</script>
+                if (isAndroid) {
+                    window.location.href = 'intent://#Intent;package=com.toddle.family;scheme=toddle;end';
+                } else if (isIphone) {
+                    window.location.href = 'https://apps.apple.com/us/app/toddle-family/id1473392321';
+                } else {
+                    var win = window.open('', windowName);
+
+                    try {
+                        if (win.open) {
+                            window.open(url, windowName);
+                        }
+                    } catch (e) {
+                        win.focus();
+                    }
+                }
+            }
+        </script>
+        <a onclick="openOrFocusTab();"><i class="fa-solid fa-chevron-left"></i> Voltar para a Toddler</a>
 <body class="is-boxed has-animations">
     <div class="body-wrap">
         <header class="site-header">
