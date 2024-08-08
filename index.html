@@ -14,16 +14,16 @@
 
 <script>
 function openToddleApp() {
-    var appUrl = "intent://#Intent;package=com.toddle.family;scheme=toddle;end"; 
+    var appUrl = "intent://#Intent;package=com.toddle.family;scheme=toddle;end";
     var fallbackUrl = "https://play.google.com/store/apps/details?id=com.toddle.family&hl=en";
 
     // Tenta abrir o aplicativo
     window.location.href = appUrl;
 
     // Caso o app não esteja instalado, redireciona para a Play Store
-    setTimeout(function() {
-        window.location.href = fallbackUrl;
-    }, 2000); // Espera 2 segundos antes de redirecionar para a loja
+    // setTimeout(function() {
+    //     window.location.href = fallbackUrl;
+    // }, 2000); // Espera 2 segundos antes de redirecionar para a loja
 }
 </script>
 <body class="is-boxed has-animations">
