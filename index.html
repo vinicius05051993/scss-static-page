@@ -17,7 +17,7 @@
                 var isAndroid = /Android/i.test(navigator.userAgent);
 
                 if (isAndroid) {
-                    window.location.href = 'intent://#Intent;package=com.toddle.family;scheme=toddle;end';
+                    window.location.href = 'toddle-family://app/dashboard';
                 } else if (isIphone) {
                     window.location.href = 'https://apps.apple.com/us/app/toddle-family/id1473392321';
                 } else {
