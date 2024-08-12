@@ -17,6 +17,7 @@
                 var isAndroid = /Android/i.test(navigator.userAgent);
 
                 if (isAndroid) {
+                    alert('android')
                     var now = new Date().getTime();
                     window.location.href = 'toddle-family://app/dashboard';
 
@@ -24,7 +25,7 @@
                         // Se o tempo atual menos o tempo inicial for menor que 2 segundos,
                         // é provável que o aplicativo não esteja instalado, então redireciona para a Play Store
                         if (new Date().getTime() - now < 2000) {
-                            window.location.href = 'www.google.com.br';
+                            window.location.href = 'https://www.google.com.br';
                         }
                     }, 1500);
                 } else if (isIphone) {
