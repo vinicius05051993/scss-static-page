@@ -16,7 +16,8 @@
         appLaunched = true;
     }
 });
-    
+
+            var appLaunched = false;
             function openOrFocusTab() {
 
                 var isIphone = /iPhone|iPad/i.test(navigator.userAgent);
@@ -24,7 +25,6 @@
 
                 if (isAndroid) {
                     var now = new Date().getTime();
-                    var appLaunched = false;
                     window.location.href = 'toddle-family://app/dashboard';
 
                     setTimeout(function () {
