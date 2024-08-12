@@ -17,11 +17,12 @@
                 var isAndroid = /Android/i.test(navigator.userAgent);
 
                 if (isAndroid) {
-                    alert('android')
                     var now = new Date().getTime();
                     try {
+                        alert('deu certo')
                         window.location.href = 'toddle-family://app/dashboard';
                     } catch (e) {
+                        alert('exception')
                         window.location.href = 'https://www.google.com.br';
                     }
                 } else if (isIphone) {
