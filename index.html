@@ -17,6 +17,7 @@
                 var isAndroid = /Android/i.test(navigator.userAgent);
 
                 if (isAndroid) {
+                    var now = new Date().getTime();
                     window.location.href = 'toddle-family://app/dashboard';
 
                     setTimeout(function () {
