@@ -19,15 +19,11 @@
                 if (isAndroid) {
                     alert('android')
                     var now = new Date().getTime();
-                    window.location.href = 'toddle-family://app/dashboard';
-
-                    setTimeout(function () {
-                        // Se o tempo atual menos o tempo inicial for menor que 2 segundos,
-                        // é provável que o aplicativo não esteja instalado, então redireciona para a Play Store
-                        if (new Date().getTime() - now < 2000) {
-                            window.location.href = 'https://www.google.com.br';
-                        }
-                    }, 1500);
+                    try {
+                        window.location.href = 'toddle-family://app/dashboard';
+                    } catch (e) {
+                        window.location.href = 'https://www.google.com.br';
+                    }
                 } else if (isIphone) {
                     window.location.href = 'toddle-family://app/dashboard';
                 } else {
