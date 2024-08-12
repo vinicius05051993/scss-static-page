@@ -17,13 +17,14 @@
     }
 });
 
-            var appLaunched = false;
             function openOrFocusTab() {
+                
 
                 var isIphone = /iPhone|iPad/i.test(navigator.userAgent);
                 var isAndroid = /Android/i.test(navigator.userAgent);
 
                 if (isAndroid) {
+                    var appLaunched = false;
                     var now = new Date().getTime();
                     window.location.href = 'toddle-family://app/dashboard';
                     setTimeout(function () {
