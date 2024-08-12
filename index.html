@@ -11,25 +11,20 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <script>
-    document.addEventListener('visibilitychange', function() {
-    if (document.hidden) {
-        appLaunched = true;
-    }
-});
-
+    
             function openOrFocusTab() {
                 
 
                 var isIphone = /iPhone|iPad/i.test(navigator.userAgent);
                 var isAndroid = /Android/i.test(navigator.userAgent);
+                alert('atualizado')
 
                 if (isAndroid) {
-                    var appLaunched = false;
-                    var now = new Date().getTime();
                     window.location.href = 'toddle-family://app/dashboard';
+
                     setTimeout(function () {
-                        if (!appLaunched && new Date().getTime() - now < 2000) {
-                            window.location.href = 'https://www.google.com.br';
+                        if (!document.hidden) {
+                            window.location.href = 'https://google.com/';
                         }
                     }, 1500);
                 } else if (isIphone) {
