@@ -13,7 +13,6 @@
 <script>
     document.addEventListener('visibilitychange', function() {
     if (document.hidden) {
-        alert('colocando true')
         appLaunched = true;
     }
 });
@@ -27,9 +26,6 @@
                 if (isAndroid) {
                     var now = new Date().getTime();
                     window.location.href = 'toddle-family://app/dashboard';
-
-                    alert(appLaunched)
-
                     setTimeout(function () {
                         if (!appLaunched && new Date().getTime() - now < 2000) {
                             window.location.href = 'https://www.google.com.br';
