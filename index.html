@@ -10,39 +10,6 @@
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-<script>
-    
-            function openOrFocusTab() {
-                
-
-                var isIphone = /iPhone|iPad/i.test(navigator.userAgent);
-                var isAndroid = /Android/i.test(navigator.userAgent);
-                alert('atualizado')
-
-                if (isAndroid) {
-                    window.location.href = 'toddle-family://app/dashboard';
-
-                    setTimeout(function () {
-                        if (!document.hidden) {
-                            window.location.href = 'https://google.com/';
-                        }
-                    }, 1500);
-                } else if (isIphone) {
-                    window.location.href = 'toddle-family://app/dashboard';
-                } else {
-                    var win = window.open('', windowName);
-
-                    try {
-                        if (win.open) {
-                            window.open(url, windowName);
-                        }
-                    } catch (e) {
-                        win.focus();
-                    }
-                }
-            }
-        </script>
-        <a onclick="openOrFocusTab();"><i class="fa-solid fa-chevron-left"></i> Voltar para a Toddler</a>
 <body class="is-boxed has-animations">
     <div class="body-wrap">
         <header class="site-header">
@@ -148,6 +115,15 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="about-us section">
+                 <div class="container">
+                    <div class="section-inner text-center">
+                        <h2 class="section-title mt-0">Quem Somos</h2>
+                            <p class="section-paragraph mb-0">Somos uma equipe de profissionais das mais diversas áreas, unindo nossas experiências e conhecimentos para oferecer soluções eficazes e inovadoras. Fundada em 2022 na cidade de Marília, nossa empresa já teve a honra de atender mais de 120 clientes, sempre com o compromisso de entregar resultados excepcionais e superar expectativas.</p>
+                    </div>
+                 </div>
             </section>
 
             <section class="pricing section">
