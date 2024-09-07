@@ -253,7 +253,7 @@ html {
 }
 
 body {
-  background: #1D2026; /* Fallback for when there is no custom background color defined. */
+  background: #000000; /* Fallback for when there is no custom background color defined. */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -490,6 +490,14 @@ h6,
   letter-spacing: -0.1px;
 }
 
+.already-shipping {
+  color: aquamarine;
+}
+
+.wait-shipping {
+  color: bisque;
+}
+
 .text-xs {
   font-size: 16px;
   line-height: 24px;
@@ -566,7 +574,7 @@ pre .h6 {
 }
 
 pre, code, kbd, tt, var {
-  background: #1D2026;
+  background: #000000;
 }
 
 pre {
@@ -666,8 +674,8 @@ label {
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #1D2026;
-  color: #6637df !important;
+  background-color: #000000;
+  color: #3c3a95 !important;
   border: none;
   height: auto;
   left: 8px;
@@ -695,7 +703,7 @@ label {
 }
 
 .text-primary {
-  color: #6637df;
+  color: #3c3a95;
 }
 
 .has-top-divider {
@@ -1137,8 +1145,8 @@ label {
 .input[disabled],
 .textarea[disabled] {
   cursor: not-allowed;
-  background-color: #1D2026;
-  border-color: #1D2026;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .input {
@@ -1224,12 +1232,12 @@ label {
 }
 
 .button-primary {
-  background: #3b61ee;
-  background: linear-gradient(65deg, #6637df 0, #0F8AFD 100%);
+  background: #2b2956;
+  background: linear-gradient(65deg, #3c3a95 0, #191816 100%);
 }
 .button-primary:hover {
-  background: #4469ef;
-  background: linear-gradient(65deg, #6d40e0 0, #198ffd 100%);
+  background: #2e2c5d;
+  background: linear-gradient(65deg, #3f3d9c 0, #1e1d1b 100%);
 }
 
 .button-block {
@@ -1384,7 +1392,7 @@ label {
   top: 41.9%;
   width: 28.03%;
   height: 37.37%;
-  background: linear-gradient(to left top, #00BFFB, rgba(0, 191, 251, 0));
+  background: linear-gradient(to left top, #bc00fb, rgba(188, 0, 251, 0));
   transform: rotateZ(45deg);
 }
 .hero-figure-box-01::before {
@@ -1397,7 +1405,7 @@ label {
   top: 64.1%;
   width: 37.87%;
   height: 50.5%;
-  background: linear-gradient(to left top, #6637df, rgba(102, 55, 223, 0));
+  background: linear-gradient(to left top, #3c3a95, rgba(60, 58, 149, 0));
   transform: rotateZ(-45deg);
 }
 .hero-figure-box-02::before {
@@ -1410,7 +1418,7 @@ label {
   top: -56.8%;
   width: 56.81%;
   height: 75.75%;
-  background: linear-gradient(to left top, #00BFFB, rgba(0, 191, 251, 0));
+  background: linear-gradient(to left top, #bc00fb, rgba(188, 0, 251, 0));
 }
 .hero-figure-box-03::before {
   background: linear-gradient(to left, #15181D 0%, rgba(21, 24, 29, 0) 60%);
@@ -1422,7 +1430,7 @@ label {
   top: -8%;
   width: 45.45%;
   height: 60.6%;
-  background: linear-gradient(to left top, #6637df, rgba(102, 55, 223, 0));
+  background: linear-gradient(to left top, #3c3a95, rgba(60, 58, 149, 0));
   transform: rotateZ(-135deg);
 }
 .hero-figure-box-04::before {
@@ -1466,7 +1474,7 @@ label {
   top: 81.6%;
   width: 19.51%;
   height: 26.01%;
-  background: #6637df;
+  background: #3c3a95;
   transform: rotateZ(-22deg);
 }
 .hero-figure-box-08::before {
@@ -1479,7 +1487,7 @@ label {
   top: -17.9%;
   width: 6.63%;
   height: 8.83%;
-  background: #00BFFB;
+  background: #bc00fb;
   transform: rotateZ(-52deg);
 }
 .hero-figure-box-09::before {
@@ -1492,7 +1500,7 @@ label {
   top: 4.3%;
   width: 3.03%;
   height: 4.04%;
-  background: rgba(0, 191, 251, 0.32);
+  background: rgba(188, 0, 251, 0.32);
   transform: rotateZ(-50deg);
 }
 
@@ -1755,7 +1763,7 @@ label {
 }
 
 .body-wrap {
-  background: #1D2026;
+  background: #000000;
   overflow: hidden;
   /* Sticky footer */
   display: flex;
