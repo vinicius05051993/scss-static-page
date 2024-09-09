@@ -36,7 +36,7 @@ async function getProducts() {
             featureIconDiv.classList.add('feature-icon');
 
             const img = document.createElement('img');
-            img.src = "dist/images/feature-icon-01.svg";
+            img.src = product.imagem;
             img.alt = "Feature 01";
 
             featureIconDiv.appendChild(img);
