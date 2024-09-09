@@ -64,7 +64,7 @@ async function getProducts() {
 
             const buyButton = document.createElement('a');
             buyButton.classList.add('button', 'button-primary');
-            buyButton.href = `https://wa.me/5514997598823?text='Quero o produto ${product.nome}'`;
+            buyButton.href = `https://wa.me/14997598823?text='Quero o produto ${product.nome}'`;
             buyButton.target = '_blank';
             buyButton.textContent = 'Comprar';
 
