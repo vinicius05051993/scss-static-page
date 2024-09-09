@@ -38,6 +38,8 @@ async function getProducts() {
             const img = document.createElement('img');
             img.src = product.imagem;
             img.alt = "Feature 01";
+            img.height = "300";
+            img.width = "250";
 
             featureIconDiv.appendChild(img);
 
